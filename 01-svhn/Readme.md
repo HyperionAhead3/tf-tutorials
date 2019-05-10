@@ -1,3 +1,7 @@
+    '''
+    Homework_1.md中Lp-pooling的实现方法
+    在model.py中修改
+    '''
     def _pool_layer(self, name, inp, ksize, stride, padding='SAME', mode='MAX', p=None):
         assert mode in ['MAX', 'AVG', 'LP'], 'the mode of pool must be MAX or AVG'
         if p is not None:
